@@ -137,7 +137,8 @@ button {
 .benefit {
     padding: 96px 0;
 }
-.h-tree {
+.h-tree,
+.i-two {
     color: var(--primary-navyblue-color);
     font-size: 36px;
     font-weight: 700;
@@ -160,7 +161,71 @@ button {
     letter-spacing: 0.02rem;
     margin: 0;
 }
-
+.team {
+    padding: 96px 0;
+    background-color: var(--cloud-color);
+}
+.list-team {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+    margin: 0 auto;
+    padding: 0;
+}
+.team .liii {
+    background-color: var(--white-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    display: block;
+    margin: 0 auto;
+}
+.i-two {
+    margin: 0 0 72px 0;
+}
+.icon-team {
+    width: 16px;
+    height: 16px;
+    fill: var(--white-color);
+}
+.cont-team {
+    padding: 32px 0;
+    text-align: center;
+}
+.cont-team .i-tree {
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+.list-icon {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.list-icon .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--iris-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list-icon .link:hover,
+.list-icon .link:focus {
+    background-color: var(--howe-color);
+}
+.team .text {
+    margin: 0 0 8px 0;
+}
+/* eee */
+/* eee */
+/* eee */
+/* eee */
 /* eee */
 .menu-container {
     /* Dont touch */
@@ -206,6 +271,8 @@ button {
     .menu {
         display: none;
     }
+}
+@media (max-width: 1157px) {
 }
 
 @media (min-width: 768px) {
