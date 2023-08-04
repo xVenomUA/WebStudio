@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="Second homework" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -16,23 +17,31 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <link rel="stylesheet" href="./css/styles.css" />
-        <title>GOIT_MARKUP-HW-04</title>
+        <link rel="stylesheet" href="./css/stylessphone.css" />
+        <title>GOIT_MARKUP-HW-06</title>
     </head>
     <body>
         <header class="header">
             <div class="container">
                 <nav class="nav">
-                    <a class="link-logo" href="./index.html"
+                    <a class="link-logo link" href="./index.html"
                         >Web<span class="second">Studio</span></a
                     >
-                    <ul class="list">
-                        <li><a class="link-pes" href="./index.html">Studio</a></li>
+                    <button
+                        class="menu-toggle js-open-menu style-menu"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                        ><svg class="icon menu-icon" width="24" height="24">
+                            <use href="./images/icons.svg#menu"></use>
+                        </svg>
+                    </button>
+                    <ul class="menu">
+                        <li><a class="link link-pes" href="./index.html">Studio</a></li>
                         <li><a class="link" href="./portfolio.html">Portfolio</a></li>
                         <li><a class="link" href="">Contacts</a></li>
                     </ul>
                 </nav>
-                <address class="adre">
+                <address class="menu">
                     <ul class="list">
                         <li
                             ><a class="link" href="mailto:info@devstudio.com"
@@ -501,6 +510,26 @@
                 </form>
             </div>
         </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="icon icon-close" width="24" height="24">
+                    <use href="./images/icons.svg#icon-close-black-18dp"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu">
+                <li><a href="" class="link">About</a></li>
+                <li><a href="" class="link">Products</a></li>
+                <li><a href="" class="link">Contacts</a></li>
+                <li><a href="" class="link">Career</a></li>
+            </ul>
+        </div>
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="js/mobile-menu.js"></script>
         <script src="./js/modal.js"></script>
     </body>
 </html>

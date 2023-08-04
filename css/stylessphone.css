@@ -1,0 +1,105 @@
+:root {
+    --ral-font: 'Raleway', sans-serif;
+    --rob-font: 'Roboto', sans-serif;
+    --white-color: #ffffff;
+    --navyblue-color: #2e2f42;
+    --iris-color: #4d5ae5;
+    --slate-color: #434455;
+    --howe-color: #404bbf;
+    --cloud-color: #f4f4fd;
+    --but-color: #e7e9fc;
+    --lightslate: #8e8f99;
+    --soc: #31d0aa;
+}
+.container {
+    max-width: 426px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.header {
+    border: 1px solid var(--but-color);
+    background: var(--white-color);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+        0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+.link {
+    text-decoration: none;
+}
+.nav {
+    display: flex;
+}
+.link-logo {
+    display: block;
+    font-family: var(--ral-font);
+    color: var(--iris-color);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0 auto 0 0;
+    padding: 24px 0;
+}
+.second {
+    color: var(--navyblue-color);
+}
+.style-menu {
+    background-color: transparent;
+    width: 32px;
+    height: 22px;
+    border: none;
+    padding: 24px;
+}
+.menu-container {
+    /* Dont touch */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #3f51b5;
+    z-index: 999;
+    margin: 0;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    /* Dont touch */
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    /* Dont touch */
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 766px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
