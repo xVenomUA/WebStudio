@@ -18,12 +18,11 @@
     margin: 0 auto;
 }
 .header {
-    border: 1px solid var(--but-color);
+    border-bottom: 1px solid var(--but-color);
     background: var(--white-color);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
-
 .link {
     text-decoration: none;
 }
@@ -46,12 +45,20 @@
     color: var(--navyblue-color);
 }
 .style-menu {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
     background-color: transparent;
-    width: 32px;
-    height: 22px;
+    cursor: pointer;
     border: none;
-    padding: 24px;
+    border-radius: 50%;
 }
+
 .menu-container {
     /* Dont touch */
     position: fixed;
