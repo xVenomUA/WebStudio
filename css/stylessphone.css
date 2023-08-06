@@ -103,6 +103,7 @@ button {
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+    max-width: 428px;
 }
 .i-one {
     color: var(--white-color);
@@ -290,6 +291,10 @@ button {
 }
 .icon-social {
     fill: var(--cloud-color);
+}
+.social .link:hover,
+.social .link:focus {
+    background-color: var(--soc);
 }
 .end-icon {
     margin: 0 0 72px 0;
@@ -572,11 +577,42 @@ button {
         width: 75px;
         margin: 0 0 16px 0;
     }
+    .service {
+        max-width: 768px;
+    }
 }
 
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
+    }
+    .adre .list {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        padding: 24px 0;
+    }
+    .adre .link {
+        font-size: 16px;
+        line-height: 1.5rem; /* 150% */
+        letter-spacing: 0.02rem;
+        padding: 0;
+    }
+    .team .liii {
+        flex-basis: calc((100-3 * 24px) / 4);
+    }
+    .service {
+        max-width: 1440px;
+    }
+    .end .container {
+        display: flex;
+        align-items: baseline;
+    }
+    .end-logo {
+        margin: 0 120px 0 0;
+    }
+    .social {
+        margin: 0 80px 0 0;
     }
 }
 
