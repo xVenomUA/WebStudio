@@ -673,6 +673,13 @@ button {
     .benefit .text {
         font-weight: 400;
     }
+    .service {
+        padding: 188px;
+    }
+    .team,
+    .customer {
+        padding: 120px;
+    }
 }
 
 @media (max-width: 767px) {
