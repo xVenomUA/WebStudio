@@ -12,8 +12,8 @@
     --soc: #31d0aa;
 }
 body {
-    background-color: var(--primary-white-color);
-    font-family: var(--primaryrob-font);
+    background-color: var(--white-color);
+    font-family: var(--rob-font);
     color: var(--slate-color);
 }
 *,
@@ -105,18 +105,16 @@ button {
     margin: 0 auto;
 }
 .i-one {
-    font-family: var(--rob-font);
     color: var(--white-color);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.045em;
+    letter-spacing: 0.045rem;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 72px;
     text-transform: capitalize;
-    max-width: 340px;
-    height: 80px;
+    max-width: 320px;
 }
 .order-button {
     display: block;
@@ -162,12 +160,12 @@ button {
     gap: 72px;
 }
 .benefit .text {
-    width: 396px;
+    color: var(--slate, #434455);
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.5rem; /* 150% */
     letter-spacing: 0.02rem;
+    width: 100%;
     margin: 0;
-    color: var(--slate-color);
 }
 .team {
     padding: 96px 0;
@@ -293,7 +291,7 @@ button {
 .icon-social {
     fill: var(--cloud-color);
 }
-.list-icon {
+.end-icon {
     margin: 0 0 72px 0;
 }
 .formall .lab-email {
@@ -393,26 +391,31 @@ button {
 .mobile-menu .link,
 .gmail {
     color: var(--navyblue, #2e2f42);
-
-    /* Header 2 */
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
-    letter-spacing: 0.045em;
+    letter-spacing: 0.045rem;
     text-transform: capitalize;
 }
 .mobile-menu .link-now,
 .gmail {
-    color: var(--howe-color);
+    color: var(--iris, #4d5ae5);
+
+    /* Header 2 */
+    font-size: 36px;
     font-style: normal;
+    line-height: 1.11; /* 111.111% */
+    letter-spacing: 0.045rem;
+    text-transform: capitalize;
 }
 .mobile-menu {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
     padding: 0;
-    margin: 0 0 284px 0;
+    margin: 0;
+    margin-bottom: 224px;
 }
 .adre-list {
     display: inline-flex;
@@ -425,6 +428,7 @@ button {
 }
 .menu-icon {
     gap: 56px;
+    justify-content: start;
 }
 .tel {
     color: var(--slate, #434455);
