@@ -45,6 +45,12 @@ body {
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
         0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
+.icon-benefit {
+    display: none;
+}
+.work-cont {
+    display: none;
+}
 .link {
     text-decoration: none;
 }
@@ -478,6 +484,7 @@ button {
         letter-spacing: 0.02rem;
         display: block;
         padding: 24px 0;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .nav .link:hover,
     .nav .link:focus {
@@ -507,6 +514,7 @@ button {
         line-height: 0.875rem;
         letter-spacing: 0.03rem;
         color: var(--slate-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .adre .list {
         display: inline-flex;
@@ -516,6 +524,10 @@ button {
         gap: 12px;
         margin: 0;
         padding: 16px 0;
+    }
+    .adre .link:hover,
+    .adre .link:focus {
+        color: var(--howe-color);
     }
     .benefit .list {
         flex-direction: row;
@@ -614,6 +626,53 @@ button {
     .social {
         margin: 0 80px 0 0;
     }
+    .work-cont {
+        display: block;
+    }
+    .work .list {
+        display: flex;
+        gap: 24px;
+        padding: 0;
+        margin: 0;
+    }
+    .work .liii {
+        flex-basis: calc((100% - 48px) / 3);
+    }
+    .work {
+        padding-bottom: 120px;
+    }
+    .icon-benefit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cloud-color);
+        border-radius: 4px;
+        height: 112px;
+        margin-bottom: 8px;
+    }
+    .benefit {
+        padding: 120px 0;
+    }
+    .benefit .h-tree {
+        color: var(--primary-navyblue-color);
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2rem;
+        letter-spacing: 0.025rem;
+        text-align: start;
+    }
+    .benefit .list {
+        align-items: flex-start;
+        padding: 0;
+        gap: 24px;
+        margin: 0;
+    }
+    .benefit .liii {
+        flex-basis: calc((100% - 3 * 24px) / 4);
+    }
+    .benefit .text {
+        font-weight: 400;
+    }
 }
 
 @media (max-width: 767px) {
@@ -692,7 +751,7 @@ button {
     line-height: 1.17;
     color: var(--lightslate);
     display: block;
-    margin: 0 0 4px 0;
+    margin: 8px 0 4px 0;
 }
 .order-info {
     width: 100%;
