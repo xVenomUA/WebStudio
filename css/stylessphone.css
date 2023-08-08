@@ -293,7 +293,11 @@ button {
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin: 0 auto 72px auto;
+    margin: 0 auto 0 auto;
+}
+.end-logo,
+.end .tablet {
+    margin-bottom: 72px;
 }
 .text-social {
     margin-bottom: 16px;
@@ -305,9 +309,7 @@ button {
 .social .link:focus {
     background-color: var(--soc);
 }
-.end-icon {
-    margin: 0 0 72px 0;
-}
+
 .formall .lab-email {
     color: var(--white-color);
     width: 100%;
@@ -374,6 +376,8 @@ button {
     margin: 0;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-container.is-open {
@@ -400,7 +404,7 @@ button {
     cursor: pointer;
 }
 .menu-container {
-    padding: 80px 30px 40px 40px;
+    padding: 80px 30px 30px 40px;
 }
 .mobile-menu .link,
 .gmail {
@@ -471,7 +475,12 @@ button {
     .container {
         max-width: 766px;
     }
-
+    .modal {
+        width: 408px;
+    }
+    .end-logo {
+        margin: 0 24px 0 0;
+    }
     .i-one {
         max-width: 496px;
         font-size: 56px;
@@ -581,7 +590,7 @@ button {
     }
     .end .text-end {
         max-width: 264px;
-        height: auto;
+        height: 72px;
         margin: 0;
         text-align: start;
     }
@@ -592,11 +601,10 @@ button {
     .end-icon {
         margin: 0;
     }
-    .social {
-        margin-left: 24px;
-    }
     .formall .lab-email {
         width: 264px;
+    }
+    .foot-label {
         margin-right: 24px;
     }
     .formteg {
@@ -711,11 +719,8 @@ button {
     .customer {
         padding: 120px 0;
     }
-    .tablet {
+    .end .tablet {
         margin: 0;
-    }
-    .text-social {
-        justify-content: start;
     }
 }
 
@@ -725,6 +730,11 @@ button {
     }
 }
 @media (max-width: 1157px) {
+}
+@media (max-width: 768px) {
+    .modal {
+        width: 320px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -758,7 +768,6 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    width: 408px;
     min-height: 584px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
