@@ -105,7 +105,7 @@ button {
     padding: 112px 0;
 
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/peoplee.jpg);
+        url(../images/offc.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -905,4 +905,11 @@ input:checked + .box > .privacy {
 .buto-priv:focus,
 .menu-close:hover {
     background-color: var(--howe-color);
+}
+
+@media (min-resolution: 192dpi) {
+    .service {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/offcx2.jpg);
+    }
 }
