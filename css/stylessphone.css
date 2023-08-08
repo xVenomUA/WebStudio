@@ -287,14 +287,10 @@ button {
 }
 .text-end,
 .text-social {
-    display: flex;
     color: var(--cloud-color);
     line-height: 1.5rem; /* 150% */
     letter-spacing: 0.02rem;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: 0 auto 0 auto;
+    margin: 0;
     font-weight: 500;
 }
 .end .text-end {
@@ -458,11 +454,8 @@ button {
     margin-bottom: 48px;
 }
 .menu-icon {
-    gap: 56px;
+    gap: 30px;
     justify-content: start;
-    flex-wrap: wrap;
-    column-gap: 40px;
-    row-gap: 24px;
 }
 .tel {
     color: var(--slate, #434455);
@@ -616,7 +609,6 @@ button {
         margin: 0;
     }
     .end .text-sub {
-        width: 75px;
         margin: 0 0 16px 0;
     }
     .service {
@@ -722,6 +714,12 @@ button {
     }
     .end .tablet {
         margin: 0;
+    }
+    .end .text-end {
+        width: 264px;
+    }
+    .list-icon {
+        gap: 16px;
     }
 }
 
