@@ -59,6 +59,7 @@ ul {
 }
 img {
     display: block;
+    max-width: 100%;
 }
 button {
     font-family: inherit;
@@ -226,6 +227,7 @@ button {
     height: 40px;
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
 }
 .list-icon .link:hover,
 .list-icon .link:focus {
@@ -242,6 +244,7 @@ button {
     flex-wrap: wrap;
     row-gap: 72px;
     column-gap: 16px;
+    justify-content: center;
 }
 .customer .link {
     display: flex;
@@ -353,11 +356,11 @@ button {
 .buto-priv:focus {
     background-color: var(--howe-color);
 }
-/* eee */
-/* eee */
-/* eee */
-/* eee */
-/* eee */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           MENU
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .menu-container {
     /* Dont touch */
     position: fixed;
@@ -419,14 +422,16 @@ button {
     letter-spacing: 0.045rem;
     text-transform: capitalize;
 }
+.gmail {
+    font-size: 24px;
+}
 .mobile-menu {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 40px;
     padding: 0;
-    margin: 0;
-    margin-bottom: 224px;
+    margin: 0 0 224px 0;
 }
 .adre-list {
     display: inline-flex;
@@ -449,6 +454,12 @@ button {
     letter-spacing: 0.02rem;
     font-style: normal;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           TABLET
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 768px) {
     .container {
         max-width: 766px;
@@ -523,7 +534,7 @@ button {
         justify-content: center;
         gap: 12px;
         margin: 0;
-        padding: 16px 0;
+        padding: 16px 0 0 0;
     }
     .adre .link:hover,
     .adre .link:focus {
@@ -553,6 +564,9 @@ button {
     }
     .customer .link {
         max-width: 168px;
+    }
+    .container-end {
+        max-width: 582px; /*15 pading */
     }
     .end .link-end {
         display: inline-block;
@@ -592,8 +606,15 @@ button {
     .service {
         max-width: 768px;
     }
+    .h-tree {
+        text-align: start;
+    }
 }
-
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           LAPTOP 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
@@ -674,11 +695,20 @@ button {
         font-weight: 400;
     }
     .service {
-        padding: 188px;
+        padding: 188px 0;
     }
     .team,
     .customer {
-        padding: 120px;
+        padding: 120px 0;
+    }
+    .tablet {
+        margin: 0;
+    }
+    .text-social {
+        justify-content: start;
+    }
+    .formall .lab-email {
+        margin-bottom: 0;
     }
 }
 
@@ -696,8 +726,11 @@ button {
     }
 }
 
-/* ORDER SERIVE */
-
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        MODAL WINDOW
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .is-hidden {
     opacity: 0;
     visibility: hidden;
