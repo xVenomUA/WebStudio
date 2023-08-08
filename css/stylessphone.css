@@ -289,11 +289,18 @@ button {
 .text-social {
     display: flex;
     color: var(--cloud-color);
-    max-width: 268px;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: 0.02rem;
     align-items: center;
     text-align: center;
     justify-content: center;
     margin: 0 auto 0 auto;
+    font-weight: 500;
+}
+.end .text-end {
+    width: 268px;
+    font-weight: 400;
+    text-align: start;
 }
 .end-logo,
 .end .tablet {
@@ -587,12 +594,6 @@ button {
     .end .link-end {
         display: inline-block;
         margin-bottom: 16px;
-    }
-    .end .text-end {
-        max-width: 264px;
-        height: 72px;
-        margin: 0;
-        text-align: start;
     }
     .tablet {
         display: flex;
