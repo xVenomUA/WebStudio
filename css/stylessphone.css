@@ -721,7 +721,7 @@ button {
     .end .text-end {
         width: 264px;
     }
-    .list-icon {
+    .end .list-icon {
         gap: 16px;
     }
 }
