@@ -362,6 +362,9 @@ button {
 .buto-priv:focus {
     background-color: var(--howe-color);
 }
+.end .list-icon {
+    gap: 16px;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
            MENU
@@ -720,9 +723,6 @@ button {
     }
     .end .text-end {
         width: 264px;
-    }
-    .end .list-icon {
-        gap: 16px;
     }
 }
 
